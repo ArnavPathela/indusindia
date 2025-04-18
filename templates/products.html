@@ -1,0 +1,146 @@
+{% extends 'base.html' %}
+{% block title %} Products {% endblock %}
+{% block content %}
+<style>
+    #navbar {
+    background-color: transparent;  /* Default light color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adding subtle shadow to make navbar stand out */
+    padding: 10px 0;
+    border-bottom: 2px solid #ddd;  /* Add a border below the navbar */
+}
+
+/* Content padding to create space below navbar */
+.container {
+    margin-top: 20px; /* Adjust this value as needed */
+}
+
+    body {
+        background-color: #fff8f0;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    h1 {
+        font-size: 40px;
+        font-weight: bold;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    /* Product Section */
+    .product-section {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-top: 50px;
+        overflow-y: scroll; /* Enables scrolling */
+        max-height: 80vh; /* Limits the height to 80% of the viewport */
+    }
+
+    .product-card {
+        background-color: white;
+        border-radius: 8px;
+        padding: 20px;
+        width: 250px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .product-card img {
+        width: 100%;
+        height: 250px; /* Fixed height */
+        object-fit: cover; /* Ensures the image fits without distortion */
+        border-radius: 8px;
+    }
+
+    .product-name {
+        font-size: 22px;
+        font-weight: bold;
+        margin-top: 15px;
+    }
+
+    .product-description {
+        font-size: 16px;
+        color: #666;
+        margin-top: 10px;
+    }
+
+    /* Scrollbar styling */
+    .product-section::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    .product-section::-webkit-scrollbar-thumb {
+        background-color: rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+    }
+
+    .product-section::-webkit-scrollbar-track {
+        background-color: #f1f1f1;
+    }
+</style>
+
+<h1>Our Products</h1>
+
+<!-- Product Section with scroll -->
+<div class="product-section">
+    <div class="product-card">
+        <img src="{{ url_for('static', filename='images/candle.jpg') }}" alt="Candle">
+        <div class="product-name">Candle Stand</div>
+        <div class="product-description">This is a hand-poured candle made with natural ingredients for a relaxing ambiance.</div>
+    </div>
+
+    <div class="product-card">
+        <img src="{{ url_for('static', filename='images/lamp.jpg') }}" alt="Product 2">
+        <div class="product-name">Lamps</div>
+        <div class="product-description">Illuminate your space with unique artisanal lamp designs that elevate everyday ambiance.</div>
+    </div>
+
+    <div class="product-card">
+        <img src="{{ url_for('static', filename='images/chr.jpg') }}" alt="Product 3">
+        <div class="product-name">Christmas Decor</div>
+        <div class="product-description">Discover a merry selection of Christmas decor, perfect for bringing joy and warmth to every corner.</div>
+    </div>
+
+    <div class="product-card">
+        <img src="{{ url_for('static', filename='images/rattan.jpg') }}" alt="Product 3">
+        <div class="product-name">Rattan</div>
+        <div class="product-description">Source exquisite rattan pieces, merging natural beauty with lasting durability.</div>
+    </div>
+
+    <div class="product-card">
+        <img src="{{ url_for('static', filename='images/bag.jpg') }}" alt="Product 3">
+        <div class="product-name">Jute Bag</div>
+        <div class="product-description">Your trusted source for durable and chic jute bags, designed to meet diverse needs.</div>
+    </div>
+
+    <div class="product-card">
+        <img src="{{ url_for('static', filename='images/stool.jpg') }}" alt="Product 3">
+        <div class="product-name">Stool</div>
+        <div class="product-description">Discover premium wooden stools, perfect for any décor with their classic charm.</div>
+    </div>
+
+    <div class="product-card">
+        <img src="{{ url_for('static', filename='images/cusion.jpg') }}" alt="Product 3">
+        <div class="product-name">Cushion Covers</div>
+        <div class="product-description">Source exquisite Cushion covers, perfect for adding warmth and style to any space.</div>
+    </div>
+
+    <div class="product-card">
+        <img src="{{ url_for('static', filename='images/rug.jpg') }}" alt="Product 3">
+        <div class="product-name">Rugs</div>
+        <div class="product-description">Your trusted partner for sourcing premium, globally-sourced rugs with exceptional quality and unique designs.</div>
+    </div>
+
+    <div class="product-card">
+        <img src="{{ url_for('static', filename='images/some.jpg') }}" alt="Product 3">
+        <div class="product-name">Wall Decor</div>
+        <div class="product-description">Your reliable source for artistic wall decor, enhancing the ambiance of any environment.</div>
+    </div>
+
+</div>
+
+{% endblock %}

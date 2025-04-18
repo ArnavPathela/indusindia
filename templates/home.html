@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block title %} Indus India {% endblock %}
+{% block content %}
+<style>
+  #navbar {
+    background-color: transparent;  /* Default light color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adding subtle shadow to make navbar stand out */
+    padding: 10px 0;
+    border-bottom: 2px solid #ddd;  /* Add a border below the navbar */
+}
+
+/* Content padding to create space below navbar */
+.container {
+    margin-top: 20px; /* Adjust this value as needed */
+}
+
+    body {
+      background-image: url("{{ url_for('static', filename='images/picture.jpg') }}");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      height: 100vh;
+      margin: 0;
+    }
+  
+    p {
+      color: white;
+      font-size: 2rem;
+      text-align: center;
+      padding-top: 200px;
+    }
+  </style>
+<h1 style="font-family: 'Cinzel', serif; font-weight: bold; font-size: 75px;">Indus India</h1>
+<h4 style = "font-family: 'Cinzel', serif;margin-left: 250px;font-weight: bold;">Sourcing India For You</h4>
+
+{% endblock %}

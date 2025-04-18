@@ -1,0 +1,108 @@
+{% extends 'base.html' %}
+{% block title %} Contact Us {% endblock %}
+{% block content %}
+<style>
+    #navbar {
+    background-color: transparent;  /* Default light color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adding subtle shadow to make navbar stand out */
+    padding: 10px 0;
+    border-bottom: 2px solid #ddd;  /* Add a border below the navbar */
+}
+
+/* Content padding to create space below navbar */
+.container {
+    margin-top: 20px; /* Adjust this value as needed */
+}
+
+    body {
+        background-color: #fff8f0;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        margin-top: 50px;
+    }
+
+    .contact-row {
+        display: flex;
+        gap: 40px;
+        text-align: left;
+        max-width: 800px;
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .location {
+        font-size: 28px;
+        font-weight: bold;
+        min-width: 150px;
+        flex-shrink: 0;
+    }
+
+    .details {
+        font-size: 20px;
+        line-height: 1.6;
+    }
+
+    h1 {
+        font-size: 40px;
+        font-weight: bold;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+</style>
+
+<h1>Contact Us</h1>
+
+<div class="contact-container">
+
+    <div class="contact-row">
+        <div class="location">Delhi</div>
+        <div class="details">
+            273 Amarpali, IP Extn, Delhi - 110092<br>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=delhi@indusindia.in" target="_blank">delhi@indusindia.in</a><br>
+            +91 9711575598
+        </div>
+    </div>
+
+    <div class="contact-row">
+        <div class="location">Panipat</div>
+        <div class="details">
+            Ekta Vihar, Near Shiv Mandir, Ujha Road, Panipat - 132104, Haryana<br>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=panipat@indusindia.in" target="_blank">panipat@indusindia.in</a><br>
+            +91 9711575598
+        </div>
+    </div>
+
+    <div class="contact-row">
+        <div class="location">Moradabad</div>
+        <div class="details">
+            Khhushalpur, Delhi Road, Moradabad, UP<br>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mbd@indusindia.in" target="_blank">mbd@indusindia.in</a><br>
+            +91 9711575598
+        </div>
+    </div>
+
+    <div class="contact-row">
+        <div class="location">Jodhpur</div>
+        <div class="details">
+            Abhaygarh, opposite Kendriya Vidyalaya, Airforce Station, Jodhpur<br>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jodhpur@indusindia.in" target="_blank">jodhpur@indusindia.in</a><br>
+            +91 9711575598
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% block title %} About Us {% endblock %}
+{% block content %}
+<style>
+    /* Navbar style */
+#navbar {
+    background-color: #f8f9fa;  /* Default light color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adding subtle shadow to make navbar stand out */
+    padding: 10px 0;
+    border-bottom: 2px solid #ddd;  /* Add a border below the navbar */
+}
+
+/* Content padding to create space below navbar */
+.container {
+    margin-top: 20px; /* Adjust this value as needed */
+}
+
+  body {
+    background-color:#fff8f0;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  #navbar {
+            background-color: #fff8f0;
+        }
+
+  .about-container {
+    max-width: 900px;
+    margin: auto;
+    padding: 80px 20px;
+    color:black;
+  }
+
+  .about-container h1 {
+    font-weight: bold;
+    color: black;
+    font-size: 3rem;
+    margin-bottom: 30px;
+    font-family: 'Cinzel', serif;
+    text-align: center;
+  }
+
+  .about-container p {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+</style>
+
+<div class="about-container">
+  <h1>About Us</h1>
+  <p>
+    Based in New Delhi, India, INDUS INDIA is a leading sourcing agency committed to providing comprehensive product-sourcing solutions. Our services encompass every aspect of the sourcing process, from product development and pricing to quality control and shipping. We pride ourselves on delivering personalized service to niche boutiques and wholesalers, ensuring that each client receives an exclusive range of products without compromising on quality or delivery time.
+  </p>
+  <p>
+    Our core strengths lie in our proactive approach to information provision, our relentless pursuit of quality, and our commitment to ethical business practices.
+  </p>
+  <p>
+    By maintaining strong relationships with our vendors and adhering to rigorous quality standards, we guarantee that our clients receive products that meet international standards at competitive prices.
+  </p>
+</div>
+{% endblock %}

@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% block title %} Why Us {% endblock %}
+{% block content %}
+
+<style>
+    #navbar {
+    background-color: transparent;  /* Default light color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adding subtle shadow to make navbar stand out */
+    padding: 10px 0;
+    border-bottom: 2px solid #ddd;  /* Add a border below the navbar */
+}
+    body {
+        background-color: #fff8f0;
+        margin: 0;
+        font-family: 'Segoe UI', sans-serif;
+    }
+
+    .container-heading {
+        font-size: 100px;  
+        text-align: center;  
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .container-description {
+        font-size: 18px;  
+        margin-top: 30px;
+        line-height: 1.8;  
+    }
+
+    ol {
+        padding-left: 20px;
+    }
+
+    ol li {
+        margin-bottom: 15px;  
+        padding: 5px 0;  
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .container {
+        padding: 30px;
+        background-color: #fff8f0;  /* Ensure background-color applies to the container */
+    }
+
+</style>
+
+<div class="container-heading">
+    <h1>Why Us?</h1>
+</div>
+
+<div class="container-description">
+    <ol>
+        <li>Competitive sourcing from India</li>
+        <li>Expert team of professionals for merchandising, product development, and shipping</li>
+        <li>Regular quality checks</li>
+        <li>On-time deliveries</li>
+        <li>We focus on delivering the right supplier, the right price, the right quality, and the right time delivery. Our background in product development, coupled with our strong negotiation skills, sets us apart from the competition and ensures that we deliver on our promises.</li>
+    </ol>
+</div>
+
+{% endblock %}
