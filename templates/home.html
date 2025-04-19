@@ -14,45 +14,64 @@
     margin-top: 20px; /* Adjust this value as needed */
 }
 
-    body {
-      background-image: url("{{ url_for('static', filename='images/picture.jpg') }}");
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center;
-      height: 100vh;
-      margin: 0;
-    }
-  
-    p {
-      color: white;
-      font-size: 2rem;
-      text-align: center;
-      padding-top: 200px;
-    }
-    @media (max-width: 768px) {
-    p {
-        font-size: 1.2rem;
-        padding-top: 120px;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    h1 {
-        font-size: 40px;
-        text-align: center;
-        padding: 0 15px;
-    }
-
-    h4 {
-        font-size: 20px;
-        text-align: center;
-        margin-left: 0;
-        padding: 0 15px;
-    }
+body {
+  background-image: url("{{ url_for('static', filename='images/picture.jpg') }}");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+  margin: 0;
 }
 
-  </style>
-<h1 style="font-family: 'Cinzel', serif; font-weight: bold; font-size: 75px;">Indus India</h1>
-<h4 style = "font-family: 'Cinzel', serif;margin-left: 250px;font-weight: bold;">Sourcing India For You</h4>
+p {
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 200px;
+}
+
+@media (max-width: 768px) {
+  p {
+    font-size: 1.2rem;
+    padding-top: 120px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  h1 {
+    font-size: 40px;
+    text-align: center;
+    padding: 0 15px;
+  }
+
+  h4 {
+    font-size: 20px;
+    text-align: center;
+    margin-left: 0;
+    padding: 0 15px;
+  }
+
+  /* Centering text on mobile */
+  .brand-container {
+    text-align: center;
+    width: 100%;
+  }
+
+  .brand-container h1 {
+    font-size: 50px;
+    margin-bottom: 5px;
+  }
+
+  .brand-container h4 {
+    font-size: 24px;
+    margin-top: 0;
+  }
+}
+</style>
+
+<div class="brand-container">
+  <h1 style="font-family: 'Cinzel', serif; font-weight: bold;">Indus India</h1>
+  <h4 style="font-family: 'Cinzel', serif; font-weight: bold;">Sourcing India For You</h4>
+</div>
 
 {% endblock %}
