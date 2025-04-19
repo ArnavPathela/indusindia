@@ -2,7 +2,7 @@
 {% block title %} About Us {% endblock %}
 {% block content %}
 <style>
-    /* Navbar style */
+
 #navbar {
     background-color: #f8f9fa;  /* Default light color */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adding subtle shadow to make navbar stand out */
@@ -45,6 +45,33 @@
     line-height: 1.7;
     margin-bottom: 20px;
     text-align: justify;
+  }
+  /* Navbar style */
+  @media (max-width: 768px) {
+    .about-container {
+      padding: 40px 15px;
+    }
+
+    .about-container h1 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .about-container p {
+      font-size: 1rem;
+      line-height: 1.6;
+      text-align: left;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .about-container h1 {
+      font-size: 1.6rem;
+    }
+
+    .about-container p {
+      font-size: 0.95rem;
+    }
   }
 </style>
 
