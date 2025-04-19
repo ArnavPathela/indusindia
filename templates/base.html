@@ -22,8 +22,7 @@
             <a class="navbar-brand" href="/" style="font-size: 28px; font-family: 'Cinzel', serif;">Indus India</a>
             
             <!-- Mobile toggle button -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button id="toggleButton" class="navbar-toggler" type="button">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -64,5 +63,14 @@
             integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39WnDc9yU+6A3F08J6M9N2CE6xKftr5MTrgcv"
             crossorigin="anonymous"></script>
 
+    <!-- Custom script to toggle navbar -->
+    <script>
+        const toggleButton = document.getElementById('toggleButton');
+        const navbarNav = document.getElementById('navbarNav');
+
+        toggleButton.addEventListener('click', () => {
+            navbarNav.classList.toggle('show');
+        });
+    </script>
 </body>
 </html>
